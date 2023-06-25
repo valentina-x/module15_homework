@@ -37,7 +37,7 @@ const success = (position) => {
 
 function getTextMessage() {
 	const chatText = document.querySelector('.chat__text');
-	const chatTextValue = chatText.value;
+	const chatTextValue = chatText.value.trim();
 	chatText.value = '';
 	return chatTextValue;
 }
